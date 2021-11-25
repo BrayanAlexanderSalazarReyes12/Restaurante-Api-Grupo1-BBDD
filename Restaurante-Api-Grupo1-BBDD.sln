@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31903.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurante-Api-Grupo1-BBDD", "Restaurante-Api-Grupo1-BBDD\Restaurante-Api-Grupo1-BBDD.csproj", "{74646791-F3CD-497F-B965-64969040B56D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74646791-F3CD-497F-B965-64969040B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74646791-F3CD-497F-B965-64969040B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74646791-F3CD-497F-B965-64969040B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74646791-F3CD-497F-B965-64969040B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5C1A6D8-0AD1-41D6-8394-369B487553E4}
+	EndGlobalSection
+EndGlobal
