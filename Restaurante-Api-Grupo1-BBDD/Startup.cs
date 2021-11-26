@@ -45,7 +45,7 @@ namespace Restaurante_Api_Grupo1_BBDD
         {
             app.UseCors(options =>
             {
-                options.WithOrigins("https://online2021.herokuapp.com/");
+                options.WithOrigins("https://online2021.herokuapp.com");
                 options.AllowAnyMethod();
                 options.AllowAnyHeader();
             });
