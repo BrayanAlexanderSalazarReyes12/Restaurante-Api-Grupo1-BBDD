@@ -22,9 +22,7 @@ namespace Restaurante_Api_Grupo1_BBDD
         public void ConfigureServices(IServiceCollection services)
         {
             //SERVICIOS DE CORS QUE ADMITE TODAS LAS PETICIONES DE TODOS LOS ORIGENES
-            services.AddCors(c => {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            });
+            services.AddCors();
             //SERIALIZAR OBJETOS A FORMATO JSON
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
@@ -45,6 +43,12 @@ namespace Restaurante_Api_Grupo1_BBDD
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(options =>
+            {
+                options.WithOrigins("http://localhost:3000");
+                options.AllowAnyMethod();
+                options.AllowAnyHeader();
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
